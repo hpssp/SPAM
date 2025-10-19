@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+<defs>
+  <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#9d4edd"/><stop offset="1" stop-color="#00ff99"/></linearGradient>
+</defs>
+<rect width="120" height="120" rx="16" fill="#071021"/>
+<g transform="translate(20,20)">
+  <circle cx="40" cy="20" r="18" fill="url(#g1)" opacity="0.95"/>
+  <path d="M10 60 h60 v6 h-60 z" fill="#0b0b12" opacity="0.7"/>
+  <text x="10" y="100" fill="#9d4edd" font-size="10" font-family="Arial">Alerta Digital</text>
+</g>
+</svg>

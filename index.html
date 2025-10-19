@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alerta Digital — Proteja-se contra golpes online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="container header-inner">
+      <div class="logo" aria-label="Alerta Digital logo">
+        <img src="logo.svg" alt="Logotipo Alerta Digital" width="48" height="48">
+        <strong>Alerta Digital</strong>
+      </div>
+      <nav class="nav" role="navigation" aria-label="Menu principal">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <ul id="main-nav" class="nav-list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#golpes">Golpes</a></li>
+          <li><a href="#dicas">Dicas</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Proteja-se contra golpes, fraudes e crimes virtuais</h1>
+        <p class="lead">Informações práticas e ferramentas para identificar — e evitar — golpes online. Conteúdo em linguagem acessível, exemplos educativos e um quiz para testar seus conhecimentos.</p>
+        <p><a class="btn" href="#quiz">Fazer o Quiz — Teste seus conhecimentos</a></p>
+      </div>
+    </section>
+
+    <section id="golpes" class="section" aria-labelledby="golpes-title">
+      <div class="container">
+        <h2 id="golpes-title">Principais tipos de golpes</h2>
+        <div class="grid">
+          <article class="card" aria-labelledby="phishing-title">
+            <img src="phishing.svg" alt="" role="img" aria-hidden="true">
+            <h3 id="phishing-title">Phishing (e-mails e mensagens)</h3>
+            <p>Mensagens que imitam empresas ou órgãos oficiais, pedindo dados pessoais, senhas ou redirecionando para páginas falsas.</p>
+            <details>
+              <summary>Como identificar</summary>
+              <ul>
+                <li>Remetente estranho ou com domínio levemente alterado.</li>
+                <li>Erros de gramática ou urgência exagerada.</li>
+                <li>Links encurtados ou que não batem com o domínio oficial.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="card" aria-labelledby="suporte-title">
+            <img src="support.svg" alt="" role="img" aria-hidden="true">
+            <h3 id="suporte-title">Suporte falso / acesso remoto</h3>
+            <p>Golpistas fingem ser suporte técnico e pedem para instalar softwares de acesso remoto para roubar dados.</p>
+            <details>
+              <summary>Como se proteger</summary>
+              <ul>
+                <li>Nunca permita acesso remoto por solicitação inesperada.</li>
+                <li>Desconfie de quem pede senhas ou códigos enviados por SMS.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="card" aria-labelledby="promo-title">
+            <img src="fake-promo.svg" alt="" role="img" aria-hidden="true">
+            <h3 id="promo-title">Promoções falsas e clonagem de anúncios</h3>
+            <p>Anúncios e lojas fraudulentas que cobram e não entregam ou roubam dados de cartão.</p>
+            <details>
+              <summary>Como identificar</summary>
+              <ul>
+                <li>Preço muito abaixo do mercado.</li>
+                <li>Avaliações fake ou inexistentes.</li>
+                <li>Pagamento só por transferência ou PIX sem garantia.</li>
+              </ul>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dicas" class="section alt" aria-labelledby="dicas-title">
+      <div class="container">
+        <h2 id="dicas-title">Dicas rápidas de segurança</h2>
+        <ul class="tips">
+          <li>Use autenticação em dois fatores sempre que disponível.</li>
+          <li>Verifique o endereço completo do site antes de inserir dados.</li>
+          <li>Atualize sistema e aplicativos regularmente.</li>
+          <li>Use senhas únicas e um gerenciador de senhas.</li>
+          <li>Desconfie de pressão por urgência ou recompensa imediata.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="quiz" class="section" aria-labelledby="quiz-title">
+      <div class="container">
+        <h2 id="quiz-title">Quiz — Você sabe identificar um golpe?</h2>
+        <p>Responda ao quiz para ver seu nível de preparação. Ao final terá explicações detalhadas e recursos.</p>
+
+        <div id="quiz-container" class="quiz-card" aria-live="polite">
+          <!-- Quiz rendered by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Fale conosco</h2>
+        <form id="contactForm" class="contact-form" aria-label="Formulário de contato">
+          <label>
+            <span>Nome</span>
+            <input name="name" type="text" placeholder="Seu nome" required>
+          </label>
+          <label>
+            <span>E-mail</span>
+            <input name="email" type="email" placeholder="seu@exemplo.com" required>
+          </label>
+          <label>
+            <span>Mensagem</span>
+            <textarea name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Enviar</button>
+            <button type="button" id="clearStorage" class="btn ghost">Limpar progresso</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Alerta Digital — Conteúdo educativo. Este site é um exemplo educativo e não substitui orientação legal ou policial.</p>
+      <p class="small">Feito com ⚡ — Template entregue por ChatGPT</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
